@@ -448,3 +448,96 @@ ol, ul{
 }
 /* LOGOIPSUM END */
 
+/* FEATURE START */
+.features{
+    text-align: center;
+    
+
+    .feature-img{
+        display: none;
+    }
+
+    .feature-text{
+        padding-bottom: 5rem;
+        h2{
+            font-size: 1.75rem;
+            font-weight: 800;
+            padding-bottom: 2rem;
+        }
+
+        p{
+            font-size: 1.125rem;
+            color: var(--gray-600);
+            line-height: 1.7;
+        }
+    }
+
+    .feature-grid{
+        display: grid;
+        gap: 2rem;
+        padding-top: 3rem;
+    }
+
+    .feature-card{
+        display: flex;
+        gap: 1.5rem;
+        text-align: start;
+        align-items: flex-start;
+
+        h3{
+            color: var(--gray-900);
+            font-size: 1.25rem;
+            font-weight: 800;
+            padding-bottom: .5rem;
+        }
+
+        p{
+            color: var(--gray-700);
+        }
+    }
+
+
+    .icon-container{
+        background-color: var(--gray-200);
+        border-radius: .5em;
+        padding: 1rem;
+        width: 5rem;
+        
+
+        display: grid;
+        place-items: center;
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    
+    }
+
+    @media (width >= 768px){
+        .feature-grid{
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    @media (width >= 1200px){
+        .feature-img{
+            display: block;
+            margin-top: 3rem;
+
+        }
+        .container{
+            display: flex;
+            gap: 15rem;
+        }
+
+        
+
+        .feature-text{
+            text-align: start;
+            flex: 1;
+        }
+    }
+}
+/* FEATURE END */
