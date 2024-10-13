@@ -12,6 +12,9 @@
     --gray-700: #565973;
     --gray-800: #33354D;
     --gray-900: #0B0F19;
+
+    --bg-clr-white: white;
+    --bg-clr-gray: #F3F6FF;
 }
 
 
@@ -541,3 +544,62 @@ ol, ul{
     }
 }
 /* FEATURE END */
+
+/* HOW DOES IT WORK START*/
+.how-does-it-work{
+    background-color: var(--bg-clr-gray);
+    text-align: center;
+    padding-block: 3rem;
+
+    .hdiw-title{
+        font-size: 1.75rem;
+        font-weight: 800;
+    }
+    .hdiw-images{
+        display: flex;
+        justify-content: center;
+        padding-block: 2rem;
+    }
+
+    .iphone-card1{
+        display: none;
+    }
+    .iphone-card3{
+        display: none;
+    }
+    .hdiw-bottom-text{
+        h3{
+            
+            font-size: 1.375rem;
+            line-height: 1.7;
+            padding-bottom: 1rem;
+        }
+        p{
+            color: var(--gray-700);
+            line-height: 1.6;
+        }
+    }
+
+    @media (width >= 768px){
+        .hdiw-bottom-text{
+            margin: 0 auto;
+            width: 70%;
+        }
+
+        .iphone-card1,
+        .iphone-card3{
+            display: block;
+        }
+        .hdiw-images{
+            display: flex;
+        }
+    }
+
+    @media (width >= 1200px){
+        .hdiw-bottom-text{
+            width: 45%;
+            
+        }
+    }
+}
+/* HOW DOES IT WORK END */
