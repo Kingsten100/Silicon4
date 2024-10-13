@@ -74,6 +74,7 @@ ol, ul{
     padding-top: 3rem;
 }
 
+/* NAV START */
 .main-nav{
 
     .container, .main-menu{
@@ -97,22 +98,39 @@ ol, ul{
         text-wrap: nowrap;
         padding: .5em 1em;
         border-radius: .3rem;
+
+        img{
+            height: 1em;
+        }
+
+        display: none;
+
+        
     }
 
     .nav-link{
         text-decoration: none;
         color: var(--gray-800);
         margin-left: 3rem;
+
+        display: none;
+        
     }
 
     .menu-btn{
         background-color: transparent;
         border: none;
-        display: none;
+        
+        flex-shrink: none;
+        
+        
+        position: absolute;
+        right: 0rem;
     }
 
     .container{
         position: relative;
+        
     }
 
     .dark-mode{
@@ -124,7 +142,11 @@ ol, ul{
         color: var(--gray-700);
 
         position: absolute;
-        right: 11rem;
+        right: 11rem; 
+    }
+
+    .darkmode-text{
+        display: none;
     }
 
     .toggle{
@@ -173,4 +195,46 @@ ol, ul{
     
         }
     }
+
+    @media (width <= 767px ){
+        
+        .menu-btn{
+            display: block;
+            padding-right: 1rem;
+        }
+        .dark-mode{
+            right: 4rem;
+        }
+        
+         
+    }
+
+    
+    @media (width >= 768px){
+        .darkmode-text{
+            display: block;
+        }
+        .dark-mode{
+            right:5rem;
+        }
+    }
+
+    @media (width >= 1400px){
+        .menu-btn{
+            display: none;
+        }
+        .nav-link{
+            display: block;
+        }
+        .btn-login{
+            display: inline-flex;
+        }
+        .dark-mode{
+            right: 12rem;
+        }
+    }
+
 }
+/* NAV END */
+
+
