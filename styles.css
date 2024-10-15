@@ -804,6 +804,7 @@ ol, ul{
         gap: 1rem;
         border: 1px solid var(--gray-300);
         border-radius: .5rem;
+        
         p{
             color: var(--gray-700);
             font-size: 0.875rem;
@@ -944,19 +945,66 @@ ol, ul{
         .contact-us-btn{
             display: none;
         }
+        
         .contact-form{
             display: flex;
             flex-direction: row;
+            text-align: start;
+            
+        
+            
             
             .contact-message{
-                width: 50%;
+                width: 49%;
+                position: absolute;
+                bottom: 0;
             }
             .contact-phone{
-                width: 50%;
+                width: 49%;
+                position: absolute;
+                bottom: 0;
+                right: 0;
             }
         }
+        .faq-container{
+            position: relative;
+            padding-bottom: 15rem;
+        }
+        
+
+        
 
 
+        
+    }
+
+    @media (width >= 1200px){
+        .faq-container{
+            display: flex;
+            
+        }
+        .contact-form{
+            .contact-message,
+            .contact-phone{
+                position: static;
+            }
+
+        }
+        
+        .faq-text{
+            text-align: start;
+            flex: 1;
+            .contact-message,
+            .contact-phone{
+                width: 12.25rem;
+             }
+        }
+        
+        .accordion{
+            flex: 1;
+        }
+
+        
         
     }
 
