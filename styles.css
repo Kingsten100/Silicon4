@@ -716,3 +716,32 @@ ol, ul{
     }
 }
 /* FEATURE 2 END */
+
+/* TESTIMONIALS START */
+.testimonials{
+    display: none;
+    background-color: var(--bg-clr-gray);
+    .testimonials-container{
+        display: flex;
+        padding-bottom: 3rem;
+    }
+
+    .testimonials-title{
+        color: var(--gray-900);
+        font-size: 2.5rem;
+        font-weight: 800;
+        line-height: 1.3;
+        flex: 1.5;
+    }
+    .testimonials-img{
+        flex: 2;
+    }
+
+}
+@media (width >= 1200px){
+    .testimonials{
+        display: block;
+    }
+}
+/* TESTIMONIALS END */
+
