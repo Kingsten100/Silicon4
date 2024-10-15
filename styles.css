@@ -559,6 +559,7 @@ ol, ul{
         display: flex;
         justify-content: center;
         padding-block: 2rem;
+        
     }
 
     .iphone-card1{
@@ -596,6 +597,9 @@ ol, ul{
     }
 
     @media (width >= 1200px){
+        .hdiw-images{
+            gap: 3rem;
+        }
         .hdiw-bottom-text{
             width: 45%;
             
@@ -603,3 +607,53 @@ ol, ul{
     }
 }
 /* HOW DOES IT WORK END */
+
+/* FEATURE 2 START */
+.feature-2{
+    background-color: var(--bg-clr-white);
+    .content-part-1{
+        display: flex;
+        padding-top: 3rem;
+        padding-inline: 7rem;
+        justify-content: space-between;
+        gap: 3rem;
+    }
+    .content-container{
+        padding-top: 7rem;
+        
+        h2{
+            color: var(--gray-900);
+            font-size: 2rem;
+            font-weight: 800;
+            line-height: 1.6;
+            padding-bottom: 2rem;
+        }
+    }
+
+    .list-card{
+        display: flex;
+        gap: 1rem;
+        padding-top: 1rem;
+        img{
+            width: 1.5rem;
+        }
+    }
+
+    .learn-more-btn{
+        display: flex;
+        gap: .5em;
+        align-items: center;
+        background-color: var(--clr-primary);
+        text-decoration: none;
+        color: white;
+        text-wrap: nowrap;
+        padding: .5em 1em;
+        border-radius: .3rem;
+        width: 9rem;
+        margin-top: 2rem;
+        img{
+            height: 1em;
+        }
+        
+    }
+}
