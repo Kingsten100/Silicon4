@@ -1016,7 +1016,7 @@ ol, ul{
 
 /* NEWSLETTER START */
 .newsletter{
-    padding-bottom: 5rem;
+    padding-bottom: 2rem;
     .newsletter-container{
         display: flex;
         align-items: center;
@@ -1111,3 +1111,14 @@ ol, ul{
     }
 }
 /* NEWSLETTER END */
+
+/* ALL RIGHTS RESERVED START */
+.all-rights-reserved{
+    padding-bottom: 2rem;
+    .all-right-text{
+        color: var(--gray-600);
+        font-size: 0.875rem;
+        text-align: center;
+    }
+}
+/* ALL RIGHTS RESERVED END */
