@@ -3,6 +3,10 @@
 :root{
     --clr-primary: #6366F1;
     
+    --hover-clr-primary: hsl(239, 74%, 67%);
+
+    --active-clr-primary: hsl(239, 94%, 67%);
+
     --gray-100: #F3F6FF;
     --gray-200: #EFF2FC;
     --gray-300: #E2E5F1;
@@ -114,6 +118,14 @@ ol, ul{
 
         display: none;
 
+        transition: 100ms;
+
+        &:hover, &:focus-visible{
+            background-color: var(--hover-clr-primary);
+        }
+        &:active{
+            background-color: var(--active-clr-primary);
+        }
         
     }
 
@@ -123,6 +135,10 @@ ol, ul{
         margin-left: 3rem;
 
         display: none;
+
+        &:hover, &:focus-visible{
+            color: var(--clr-primary);
+        }
         
     }
 
@@ -298,11 +314,13 @@ ol, ul{
         justify-content: center;
         padding-top: 3rem;
         padding-bottom: 3rem;
+        gap: 1rem;
 
        .discover{
         text-decoration: none;
         text-wrap: nowrap;
        }
+       
     }
 
     .hero-img{
@@ -657,6 +675,13 @@ ol, ul{
         img{
             height: 1em;
         }
+
+        &:hover, &:focus-visible{
+            background-color: var(--hover-clr-primary);
+        }
+        &:active{
+            background-color: var(--active-clr-primary);
+        }
         
     }
 
@@ -838,13 +863,16 @@ ol, ul{
             font-weight: 500;
             padding: 1rem;
             font-size: 1rem;
-            /* box-shadow: 0 3px 7px 2px var(--gray-300); */
+            
             border-radius: .5em .5em 0 0;
             width: 100%;
             cursor: pointer;
 
             img{
                 width: 2.5rem;
+            }
+            &:hover, &:focus-visible{
+                background-color: var(--gray-100);
             }
             
         }
@@ -865,10 +893,14 @@ ol, ul{
         font-weight: 500;
         padding: 1rem;
         font-size: 1rem;
-        /* box-shadow: 0 3px 7px 2px var(--gray-300); */
+        
         border-radius: 0 0 .5em .5em;
         width: 100%;
         cursor: pointer;
+
+        &:hover, &:focus-visible{
+            background-color: var(--gray-100);
+        }
         
         img{
             width: 2.5rem;
@@ -885,10 +917,14 @@ ol, ul{
         font-weight: 500;
         padding: 1rem;
         font-size: 1rem;
-        /* box-shadow: 0 3px 7px 2px var(--gray-300); */
+        
         
         width: 100%;
         cursor: pointer;
+
+        &:hover, &:focus-visible{
+            background-color: var(--gray-100);
+        }
 
         img{
             width: 2.5rem;
@@ -1059,6 +1095,13 @@ ol, ul{
         padding: 1em 1em;
         border-radius: 0 .5em .5em 0;
         cursor: pointer;
+
+        &:hover, &:focus-visible{
+            background-color: var(--hover-clr-primary);
+        }
+        &:active{
+            background-color: var(--active-clr-primary);
+        }
     }
     
     .newsletter-input{
