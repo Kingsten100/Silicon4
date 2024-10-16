@@ -1003,9 +1003,111 @@ ol, ul{
         .accordion{
             flex: 1;
         }
+        .faq-container{
+            padding-bottom: 2rem;
+        }
 
         
         
     }
 
 }
+/* FAQ END */
+
+/* NEWSLETTER START */
+.newsletter{
+    padding-bottom: 5rem;
+    .newsletter-container{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 3rem;
+        
+
+        background-color: var(--bg-clr-gray);
+        border-radius: .5em;
+        padding: 3rem 1rem;
+    }
+    .newsletter-text{
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        width: 100%;
+
+        h3{
+            color: var(--gray-900);
+            font-size: 1.5rem;
+            line-height: 1.4;
+            font-weight: 800;
+        }
+        
+        
+        img{
+            width: 4rem;
+        }
+
+    }
+    .newsletter-text-desktop{
+        display: none;
+    }
+    .subscribe-btn{
+        border: none;
+        background-color: var(--clr-primary);
+        color: white;
+        font-size: 1rem;
+        font-weight: 400;
+        padding: 1em 1em;
+        border-radius: 0 .5em .5em 0;
+        cursor: pointer;
+    }
+    
+    .newsletter-input{
+        border: 1px solid var(--gray-400);
+        font-size: 1rem;
+        display: flex;
+        width: 100%;
+        padding-left: 3rem;
+        border-radius: .5em 0 0 .5em;
+        
+        
+    }
+    
+    .newsletter-input::placeholder{
+        color: var(--gray-400);
+    }
+    
+    .newsletter-form{
+        display: flex;
+        width: 100%;
+        position: relative;
+        
+    }
+    
+    .icon{
+        width: 1.3rem;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-left: 1rem;
+        
+    }
+
+    @media (width >= 768px){
+        .newsletter-container{
+            flex-direction: row;
+        }
+        
+    }
+    @media (width >= 1200px){
+        .subscribe-btn{
+            padding: 1em 2em;
+        }
+        .newsletter-text-mobile{
+            display: none;
+        }
+        .newsletter-text-desktop{
+            display: block;
+        }
+    }
+}
+/* NEWSLETTER END */
