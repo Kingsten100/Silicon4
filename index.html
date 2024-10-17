@@ -12,19 +12,21 @@
         <div class="container spacing-y-1">
             
             <a class="silicon-logo" href="/">
-                <img src="/images/logo.svg" alt="">
+                <img class="light-logo" src="/images/logo.svg" alt="">
+                <img class="dm-logo" src="/images/darkmode/logo-dm.svg" alt="">
             </a>
             
 
             <button class="menu-btn">
-                <img src="/images/icons/hamburger.svg" alt="">
+                <img class="light-hamburger" src="/images/icons/hamburger.svg" alt="">
+                <img class="dm-hamburger" src="/images/darkmode/hamburger-dm.svg" alt="">
             </button>
 
             
             <div class="dark-mode">
                 <span class="darkmode-text">Dark Mode</span>
                 <label class="toggle">     
-                    <input type="checkbox">
+                    <input type="checkbox" id="darkmode-switch">
                     <span class="slider"></span>
                 </label>
             </div>
@@ -59,11 +61,13 @@
                     <div class="store-download">
                             
                         <a href="#" class="store-btn">
-                            <img src="/images/appstore.light.svg" alt="">
+                            <img class="light-appstore" src="/images/appstore.light.svg" alt="">
+                            <img class="dm-appstore" src="/images/darkmode/appstore-dm.svg" alt="">
                         </a>
                             
                         <a href="#" class="store-btn">
-                            <img src="/images/googleplay-light.svg" alt="">
+                            <img class="light-googleplay" src="/images/googleplay-light.svg" alt="">
+                            <img class="dm-googleplay" src="/images/darkmode/googleplay-dm.svg" alt="">
                         </a>
                             
                     </div>
@@ -71,7 +75,8 @@
     
                     <div class="more">
                         <a href="#" class="discover">
-                            <img src="/images/icons/arrow-down.svg" alt="">
+                            <img class="light-more" src="/images/icons/arrow-down.svg" alt="">
+                            <img class="dm-more" src="/images/darkmode/arrow-down-dm.svg" alt="">
                         </a>
                         <span>Discover more</span>
                     </div>
@@ -296,7 +301,8 @@
                         <h2>Clients are <br>Loving Our App</h2>
                     </div>
                     <div class="testimonials-img">
-                        <img src="/images/testimonials.png" alt="Testimonials from two different users giving 4 and 5 star reviews describing how great the Silicon app is.">
+                        <img class="light-testimonials" src="/images/testimonials.png" alt="Testimonials from two different users giving 4 and 5 star reviews describing how great the Silicon app is.">
+                        <img class="dm-testimonials" src="/images/darkmode/testimonials-dm.png" alt="Testimonials from two different users giving 4 and 5 star reviews describing how great the Silicon app is.">
                     </div>
                 </div>
                
@@ -350,7 +356,8 @@
                         <div class="question-card">
                             <button class="question">
                                 What formats can I download my transaction history in?
-                                <img src="/images/icons/arrow-down-gray.svg" alt="">
+                                <img class="light-arrow" src="/images/icons/arrow-down-gray.svg" alt="">
+                                <img class="dm-arrow" src="/images/darkmode/arrow-down-dm.svg" alt="">
                             </button>
                            
                         </div>
@@ -358,7 +365,8 @@
                         <div class="question-card">
                             <button class="question">
                                 Can I schedule future transfers?
-                                <img src="/images/icons/arrow-down-gray.svg" alt="">
+                                <img class="light-arrow" src="/images/icons/arrow-down-gray.svg" alt="">
+                                <img class="dm-arrow" src="/images/darkmode/arrow-down-dm.svg" alt="">
                             </button>
                            
                         </div>
@@ -366,7 +374,8 @@
                         <div class="question-card">
                             <button class="question">
                                 When can I use Banking App services?
-                                <img src="/images/icons/arrow-down-gray.svg" alt="">
+                                <img class="light-arrow" src="/images/icons/arrow-down-gray.svg" alt="">
+                                <img class="dm-arrow" src="/images/darkmode/arrow-down-dm.svg" alt="">
                             </button>
                            
                         </div>
@@ -374,7 +383,8 @@
                         <div class="question-card">
                             <button class="question">
                                 Can I create my own password that is easy for me to remember?
-                                <img src="/images/icons/arrow-down-gray.svg" alt="">
+                                <img class="light-arrow" src="/images/icons/arrow-down-gray.svg" alt="">
+                                <img class="dm-arrow" src="/images/darkmode/arrow-down-dm.svg" alt="">
                             </button>
                            
                         </div>
@@ -382,7 +392,8 @@
                         <div class="question-card">
                             <button class="question-last">
                                 What happens if I forget or lose my password?
-                                <img src="/images/icons/arrow-down-gray.svg" alt="">
+                                <img class="light-arrow" src="/images/icons/arrow-down-gray.svg" alt="">
+                                <img class="dm-arrow" src="/images/darkmode/arrow-down-dm.svg" alt="">
                             </button>
                             
                         </div>
@@ -417,7 +428,7 @@
                     </div>
                     <div class="newsletter-form">
                         <img class="icon" src="/images/icons/envelope.svg" alt="">
-                        <input class="newsletter-input" input="email" img placeholder="Your Email">
+                        <input class="newsletter-input" input="email" placeholder="Your Email">
                         <button class="subscribe-btn">Subscribe</button>
                     </div>
                 </div>
@@ -437,6 +448,6 @@
         </section>
     </footer>
 
-
+    <script src="darkmode.js"></script>
 </body>
 </html>
