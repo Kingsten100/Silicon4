@@ -9,6 +9,10 @@
 
     --bg-clr--dm-light: #151922;
 
+    --btn-text-clr: white;
+
+    --text-clr-white: white;
+
     --gray-100: #F3F6FF;
     --gray-200: #EFF2FC;
     --gray-300: #E2E5F1;
@@ -117,7 +121,7 @@ ol, ul{
         align-items: center;
         background-color: var(--clr-primary);
         text-decoration: none;
-        color: white;
+        color: var(--btn-text-clr);
         text-wrap: nowrap;
         padding: .5em 1em;
         border-radius: .3rem;
@@ -690,7 +694,7 @@ ol, ul{
         align-items: center;
         background-color: var(--clr-primary);
         text-decoration: none;
-        color: white;
+        color: var(--btn-text-clr);
         text-wrap: nowrap;
         padding: .5em 1em;
         border-radius: .3rem;
@@ -886,7 +890,7 @@ ol, ul{
             justify-content: space-between;
             gap: 2rem;
             border: 1px solid var(--gray-300);
-            background-color: white;
+            background-color: var(--bg-clr-white);
             color: var(--gray-900);
             font-weight: 500;
             padding: 1rem;
@@ -916,7 +920,7 @@ ol, ul{
         justify-content: space-between;
         gap: 2rem;
         border: 1px solid var(--gray-300);
-        background-color: white;
+        background-color: var(--bg-clr-white);
         color: var(--gray-900);
         font-weight: 500;
         padding: 1rem;
@@ -940,7 +944,7 @@ ol, ul{
         justify-content: space-between;
         gap: 2rem;
         border: 1px solid var(--gray-300);
-        background-color: white;
+        background-color: var(--bg-clr-white);
         color: var(--gray-900);
         font-weight: 500;
         padding: 1rem;
@@ -971,7 +975,7 @@ ol, ul{
         justify-content: center;
         background-color: var(--clr-primary);
         text-decoration: none;
-        color: white;
+        color: var(--btn-text-clr);
         text-wrap: nowrap;
         padding: 1em 1em;
         border-radius: .3rem;
@@ -1009,6 +1013,7 @@ ol, ul{
                 border: none;
             }
         }
+        
         
         
         .contact-us-btn{
@@ -1123,7 +1128,7 @@ ol, ul{
     .subscribe-btn{
         border: none;
         background-color: var(--clr-primary);
-        color: white;
+        color: var(--btn-text-clr);
         font-size: 1rem;
         font-weight: 400;
         padding: 1em 1em;
@@ -1210,7 +1215,7 @@ ol, ul{
     --bg-clr-gray: var(--gray-800);
     .main-nav{
         a{
-            color: white;
+            color: var(--text-clr-white);
         }
         .dm-logo{
             display: block;
@@ -1229,7 +1234,7 @@ ol, ul{
     .hero-page{
         background-color: var(--gray-900);
         .hero-title{
-            color: white;
+            color: var(--text-clr-white);
         }
         .hero-text{
             color: var(--gray-500);
@@ -1268,12 +1273,12 @@ ol, ul{
     .features{
         .feature-text{
             h2{
-                color: white;
+                color: var(--text-clr-white);
             }
         }
         .feature-card{
             h3{
-                color: white;
+                color: var(--text-clr-white);
             }
             p{
                 color: var(--gray-500);
@@ -1286,11 +1291,11 @@ ol, ul{
     .how-does-it-work{
         background-color: var(--bg-clr--dm-light);
         .hdiw-title{
-            color: white;
+            color: var(--text-clr-white);
         }
         .hdiw-bottom-text{
             h3{
-                color: white;
+                color: var(--text-clr-white);
             }
             p{
                 color: var(--gray-600);
@@ -1300,7 +1305,7 @@ ol, ul{
     .feature-2{
         .content-container{
             h2{
-                color: white;
+                color: var(--text-clr-white);
             }
             li{
                 color: var(--gray-600);
@@ -1308,7 +1313,7 @@ ol, ul{
         }
         .content-container2{
             h2{
-                color: white;
+                color: var(--text-clr-white);
             }
             .icon-container{
                 background-color: var(--icon-bg-clr);
@@ -1325,7 +1330,7 @@ ol, ul{
     .testimonials{
         background-color: var(--bg-clr--dm-light);
         h2{
-            color: white;
+            color: var(--text-clr-white);
         }
         .light-testimonials{
             display: none;
@@ -1336,7 +1341,7 @@ ol, ul{
     }
     .faq{
         h2{
-            color: white;
+            color: var(--text-clr-white);
         }
         p{
             color: var(--gray-600)
@@ -1344,17 +1349,37 @@ ol, ul{
         
         .question-card{
             box-shadow: none;
+            overflow: hidden;
+            .question-first{
+                background-color: var(--bg-clr--dm-light);
+                color: var(--text-clr-white);
+                
+
+                &:hover{
+                    background-color: var(--gray-700);
+                }
+                
+                
+            } 
+            .answer{
+                background-color: var(--bg-clr--dm-light);
+                
+            }
             
-            .question, .question-first, .question-last{
-                background-color: #151922;
+            
+            .question, .question-last{
+                background-color: var(--bg-clr--dm-light);
                 box-shadow: none;
-                color: white;
+                color: var(--text-clr-white);
                 
                 
                 &:hover{
                     background-color: var(--gray-700);
                 }
             }
+        }
+        .question-card-1-dm{
+            border: 1px solid var(--gray-800);
         }
         
         .light-arrow{
@@ -1366,13 +1391,13 @@ ol, ul{
     }
     .newsletter{
         .newsletter-container{
-            background-color: #151922;
+            background-color: var(--bg-clr--dm-light);
         }
         h3{
-            color: white;
+            color: var(--text-clr-white);
         }
         .newsletter-input{
-            background-color: #151922;
+            background-color: var(--bg-clr--dm-light);
             border: 1px solid var(--gray-700);
             
         }
